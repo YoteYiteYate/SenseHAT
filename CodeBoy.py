@@ -14,3 +14,10 @@ def draw_bat():
 # Main Program -------------------------
 
 draw_bat()
+while True:
+        sense.stick.direction_up = move_up
+
+def move_up(event): 
+    global bat_y
+    if event.action == 'pressed':
+        bat_y -= 1
